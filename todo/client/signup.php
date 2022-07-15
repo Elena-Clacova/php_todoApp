@@ -30,7 +30,7 @@
 
 function doSingup(username, password) {
     var http = new XMLHttpRequest();
-    var url = 'http://localhost:8080/todo/server/App.php/signup?username=' + username + '&password=' + password;
+    var url = 'http://localhost/todo/server/App.php/signup?username=' + username + '&password=' + password;
     http.open('GET', url, true);
     http.onreadystatechange = function(){
         if(http.readyState == 4 && http.status == 200) {

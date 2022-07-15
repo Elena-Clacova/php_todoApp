@@ -30,7 +30,7 @@
 
 function doLogin(username, password) {
     var http = new XMLHttpRequest();
-    var url = 'http://localhost:8080/todo/server/App.php/login?username=' + username + '&password=' + password;
+    var url = 'http://localhost/todo/server/App.php/login?username=' + username + '&password=' + password;
     http.open('GET', url, true);
     console.log('OPEN');
     http.onreadystatechange = function(){
